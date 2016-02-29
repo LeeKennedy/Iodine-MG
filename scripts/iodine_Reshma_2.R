@@ -54,7 +54,7 @@ hist(data.3$ENTRY,
 data4 <- data.in %>% filter(PRODUCT == "LIQM_RAW"| PRODUCT == "LIQ_MILK")
 
 ggplot(data4, aes(x=ENTRY, fill = PRODUCT)) + 
-  geom_histogram(position = "identity", alpha = 0.6, binwidth=2) +
+  geom_histogram(position = "identity", alpha = 0.6, binwidth=5, colour="black") +
   scale_fill_brewer(palette="Set1")+
 
   labs(x="", y="ug/100mL", title="Iodine in Liquid Milk") +
